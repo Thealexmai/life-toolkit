@@ -21,6 +21,10 @@ class TipViewController: UIViewController, UITextFieldDelegate {
 
 
     @IBAction func subtotalText(_ sender: Any) {
+        fifteenButton.isSelected = false
+        eighteenButton.isSelected = false
+        twentyButton.isSelected = false
+        
         if let subtotalTextmessage = subtotalTF.text {
             subtotalLabel.text = "$ " + subtotalTextmessage
         } else {
