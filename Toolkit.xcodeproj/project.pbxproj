@@ -56,8 +56,8 @@
 		FAA0025820421AAB00CE6FA7 /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				FAC0C3CE20439D4A00ED761C /* Tip */,
 				FAA0025920421AAB00CE6FA7 /* AppDelegate.swift */,
-				FAA0025B20421AAB00CE6FA7 /* TipViewController.swift */,
 				FAA0025D20421AAB00CE6FA7 /* DiscountViewController.swift */,
 				FAA0025F20421AAB00CE6FA7 /* Main.storyboard */,
 				FAA0026220421AAB00CE6FA7 /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				FAA0026720421AAB00CE6FA7 /* Info.plist */,
 			);
 			path = Toolkit;
+			sourceTree = "<group>";
+		};
+		FAC0C3CE20439D4A00ED761C /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0025B20421AAB00CE6FA7 /* TipViewController.swift */,
+			);
+			path = Tip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
