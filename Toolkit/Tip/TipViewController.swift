@@ -113,6 +113,11 @@ class TipViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func dismissKeyboard(_ sender: Any) {
+       self.view.endEditing(true)
+//        subtotalTF.resignFirstResponder()
+        print("Tappity tap tap tap")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
