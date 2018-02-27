@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA8AD1D42044FFC8009F8F17 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */; };
+		FA8AD1D6204545C3009F8F17 /* ConversionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */; };
 		FAA0025A20421AAB00CE6FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0025920421AAB00CE6FA7 /* AppDelegate.swift */; };
 		FAA0025C20421AAB00CE6FA7 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0025B20421AAB00CE6FA7 /* TipViewController.swift */; };
 		FAA0025E20421AAB00CE6FA7 /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0025D20421AAB00CE6FA7 /* DiscountViewController.swift */; };
 		FAA0026120421AAB00CE6FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0025F20421AAB00CE6FA7 /* Main.storyboard */; };
 		FAA0026320421AAB00CE6FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0026220421AAB00CE6FA7 /* Assets.xcassets */; };
 		FAA0026620421AAB00CE6FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0026420421AAB00CE6FA7 /* LaunchScreen.storyboard */; };
+		FAA46BA92045476A0060659A /* ConversionUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA46BA82045476A0060659A /* ConversionUnit.swift */; };
+		FAA46BAB20454A150060659A /* ConversionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA46BAA20454A150060659A /* ConversionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCollectionCell.swift; sourceTree = "<group>"; };
 		FAA0025620421AAB00CE6FA7 /* Toolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA0025920421AAB00CE6FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA0025B20421AAB00CE6FA7 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		FAA0026220421AAB00CE6FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA0026520421AAB00CE6FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA0026720421AAB00CE6FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA46BA82045476A0060659A /* ConversionUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionUnit.swift; sourceTree = "<group>"; };
+		FAA46BAA20454A150060659A /* ConversionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,17 @@
 				FAA0025D20421AAB00CE6FA7 /* DiscountViewController.swift */,
 			);
 			path = Discount;
+			sourceTree = "<group>";
+		};
+		FA8AD1D22044FF8A009F8F17 /* Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				FAA46BA82045476A0060659A /* ConversionUnit.swift */,
+				FAA46BAA20454A150060659A /* ConversionManager.swift */,
+				FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */,
+				FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */,
+			);
+			path = Conversion;
 			sourceTree = "<group>";
 		};
 		FAA0024D20421AAB00CE6FA7 = {
@@ -66,6 +85,7 @@
 			children = (
 				FAC0C3CE20439D4A00ED761C /* Tip */,
 				FA07C53E2043EDAC00C3A6B5 /* Discount */,
+				FA8AD1D22044FF8A009F8F17 /* Conversion */,
 				FAA0025920421AAB00CE6FA7 /* AppDelegate.swift */,
 				FAA0025F20421AAB00CE6FA7 /* Main.storyboard */,
 				FAA0026220421AAB00CE6FA7 /* Assets.xcassets */,
@@ -157,6 +177,10 @@
 			files = (
 				FAA0025E20421AAB00CE6FA7 /* DiscountViewController.swift in Sources */,
 				FAA0025A20421AAB00CE6FA7 /* AppDelegate.swift in Sources */,
+				FA8AD1D6204545C3009F8F17 /* ConversionCollectionCell.swift in Sources */,
+				FAA46BA92045476A0060659A /* ConversionUnit.swift in Sources */,
+				FAA46BAB20454A150060659A /* ConversionManager.swift in Sources */,
+				FA8AD1D42044FFC8009F8F17 /* ConversionViewController.swift in Sources */,
 				FAA0025C20421AAB00CE6FA7 /* TipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
