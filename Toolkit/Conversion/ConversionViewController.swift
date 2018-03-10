@@ -13,6 +13,8 @@ class ConversionViewController: UICollectionViewController {
     
     var conversionManager = ConversionManager()
     let itemsPerRow: CGFloat = 2
+    var unitType: ConversionUnit!
+
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -34,12 +36,38 @@ class ConversionViewController: UICollectionViewController {
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let conversionTypes = conversionManager.getConversionTypes()
+        unitType = conversionTypes[indexPath.row]
+        
+        //print ("\(unitType.getName()) item pressed")
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        print(a.getConversionTypes()[0].getName())
+    }
+    
+    //segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cellClicked" {
+            //send over unitType
+            let chosenUnit = segue.destination as! UnitViewController
+            let conversionTypes = conversionManager.getConversionTypes()
+
+            //sender is a cell
+            let cell = sender as! ConversionCollectionCell
+            let indexPath = self.collectionView!.indexPath(for: cell)
+            let unitChosen = conversionTypes[indexPath!.row]
+            chosenUnit.unitType = unitChosen
+            //print(unitChosen.getName())
+            
+            
+            
+        }
     }
     
 }

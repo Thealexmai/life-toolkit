@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA24FEFB2046862A00C7EEC9 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FEFA2046862A00C7EEC9 /* UnitViewController.swift */; };
+		FA24FEFD20468BD400C7EEC9 /* UnitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FEFC20468BD400C7EEC9 /* UnitEnum.swift */; };
 		FA8AD1D42044FFC8009F8F17 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */; };
 		FA8AD1D6204545C3009F8F17 /* ConversionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */; };
 		FAA0025A20421AAB00CE6FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0025920421AAB00CE6FA7 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA24FEFA2046862A00C7EEC9 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
+		FA24FEFC20468BD400C7EEC9 /* UnitEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitEnum.swift; sourceTree = "<group>"; };
 		FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCollectionCell.swift; sourceTree = "<group>"; };
 		FAA0025620421AAB00CE6FA7 /* Toolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,8 +62,10 @@
 			children = (
 				FAA46BA82045476A0060659A /* ConversionUnit.swift */,
 				FAA46BAA20454A150060659A /* ConversionManager.swift */,
-				FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */,
 				FA8AD1D5204545C3009F8F17 /* ConversionCollectionCell.swift */,
+				FA8AD1D32044FFC7009F8F17 /* ConversionViewController.swift */,
+				FA24FEFA2046862A00C7EEC9 /* UnitViewController.swift */,
+				FA24FEFC20468BD400C7EEC9 /* UnitEnum.swift */,
 			);
 			path = Conversion;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 			files = (
 				FAA0025E20421AAB00CE6FA7 /* DiscountViewController.swift in Sources */,
 				FAA0025A20421AAB00CE6FA7 /* AppDelegate.swift in Sources */,
+				FA24FEFB2046862A00C7EEC9 /* UnitViewController.swift in Sources */,
 				FA8AD1D6204545C3009F8F17 /* ConversionCollectionCell.swift in Sources */,
+				FA24FEFD20468BD400C7EEC9 /* UnitEnum.swift in Sources */,
 				FAA46BA92045476A0060659A /* ConversionUnit.swift in Sources */,
 				FAA46BAB20454A150060659A /* ConversionManager.swift in Sources */,
 				FA8AD1D42044FFC8009F8F17 /* ConversionViewController.swift in Sources */,

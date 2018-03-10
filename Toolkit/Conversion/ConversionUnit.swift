@@ -12,10 +12,12 @@ import UIKit
 class ConversionUnit {
     private let name:String
     private let image: UIImage
+    private let possibilities: [String]
     
-    init(_ name: String, _ image: UIImage) {
+    init(_ name: String, _ image: UIImage, _ possibilities: [String]) {
         self.name = name
         self.image = image
+        self.possibilities = possibilities
     }
     
     func getName() -> String {
@@ -24,5 +26,9 @@ class ConversionUnit {
     
     func getImage() -> UIImage {
         return self.image
+    }
+    
+    func getPossibilities() -> [String] {
+        return self.possibilities
     }
 }
